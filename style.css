@@ -10,6 +10,10 @@ img {
     display: flex;
 }
 
+.terms input {
+    margin-right: -200px;
+    margin-left: -200px;
+}
 
 .header {
     display: flex;
