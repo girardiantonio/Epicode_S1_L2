@@ -9,36 +9,207 @@
   </head>
   <body>
     <div class="container">
-      <hr />
-      <div class="header">
-        <div class="header-left">
-          <img src="assets/img/logo.svg" alt="Logo pagina web" />
+      <div>
+        <div class="header">
+          <div class="header-left">
+            <img src="assets/img/logo.svg" alt="Logo pagina web" />
+          </div>
+          <div class="header-center">
+            <a href="#">Home</a>
+            <a href="#">Articoli</a>
+            <a href="#">Lavora con noi</a>
+          </div>
+          <div class="header-right">
+            <h1>Epicode - il blog dei developers</h1>
+          </div>
         </div>
-        <div class="header-center">
-          <a href="#">Home</a>
-          <a href="#">Articoli</a>
-          <a href="#">Lavora con noi</a>
-        </div>
-        <div class="header-right">
-          <h1>Epicode - il blog dei developers</h1>
-        </div>
+        <hr />
       </div>
-      <hr />
 
       <main>
-        <div></div>
+        <div class="title">
+          <h2>
+            Come creare un template per i post di Mario Rossi - pubblicato il
+            25-10-2020
+          </h2>
+        </div>
+        <div class="main">
+          <div class="content">
+            <h3>
+              La prima cosa fa fare è suddividere in blocchi logici la pagina,
+              identificando le parti comuni da applicare a tutte le pagine
+            </h3>
+          </div>
+          <ul>
+            Le varie aree saranno quindi suddivise in:
+            <li>Contenuti di intestazione del tag &lt;header&gt;</li>
+            <li>
+              Contenuti centrali variabili del tag &lt;main&gt; (corpo
+              principale)
+            </li>
+            <li>
+              Contenuti di fine pagina, da inserire nel tag &lt;footer&gt;
+            </li>
+          </ul>
+
+          <h3>Formattazione del codice</h3>
+
+          <p>
+            Il testo dell'articolo dovrà essere formattato per identificare
+            tutte le parti da selezionare con i CSS. Perciò i passi saranno:
+          </p>
+          <ol>
+            Le varie aree saranno quindi suddivise in:
+            <li>
+              progettare il markup assegnando ad ogni specifico testo il tag
+              appropriato
+            </li>
+            <li>
+              Scrivere l'HTML dei tag esterni a quelli interni e dall'alto verso
+              il basso
+            </li>
+            <li>Applicare gli stili CSS</li>
+          </ol>
+
+          <p>
+            L'applicazione di stili CSS è cresciuta negli anni fino a
+            raggiungere la diffusione pressochè totale.
+          </p>
+
+          <table>
+            <h3>Diffusione dei CSS</h3>
+            <thead>
+              <tr>
+                <th>Anno</th>
+                <th>% di utilizzo</th>
+                <th>Supporto browsers</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2000</td>
+                <td>20%</td>
+                <td>17%</td>
+              </tr>
+              <tr>
+                <td>2002</td>
+                <td>35%</td>
+                <td>22%</td>
+              </tr>
+              <tr>
+                <td>2004</td>
+                <td>45%</td>
+                <td>42%</td>
+              </tr>
+              <tr>
+                <td>2008</td>
+                <td>80%</td>
+                <td>51%</td>
+              </tr>
+              <tr>
+                <td>2012</td>
+                <td>100%</td>
+                <td>76%</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="video">
+            <p>
+              Un test di validazione potrà essere fatto tramite il
+              <a href="https://github.com/girardiantonio">tool </a>online
+              dedicato allo scopo. Una volta ottimizzato il tutto, avremo
+              raggiunto il nostro obiettivo ed essere stati dei veri developers
+              come loro:
+            </p>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/aKHYh1Ryj4M"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <hr />
       </main>
 
-      <hr />
+      <aside class="art">
+        <h3>Articoli correlati</h3>
+        <div class="art2">
+          <a href="#">
+            <div class="child">
+              <p>Validare il codice HTML</p>
+              <p>Categoria: develop</p>
+              <p>Data: 18-09-2020</p>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="child">
+              <p>Correggere la sintassi</p>
+              <p>Categoria: develop</p>
+              <p>Data: 16-09-2020</p>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="child">
+              <p>Meno Kb nella pagina</p>
+              <p>Categoria: ottimizzazione</p>
+              <p>Data: 30-09-2020</p>
+            </div>
+          </a>
+        </div>
+      </aside>
+
       <footer class="footer">
-        <h3>Blog Epicode ©2023</h3>
-        <h3>
-          Testata online di Mario Rossi, registrata con prot. n.213/2018 - via
-          Luigi Einaudi 2 - Milano. P.IVA 00112233.
-        </h3>
-        <h3>Email: <a href="#">info@epicode.school</a></h3>
+        <hr />
+        <div class="newsletter">
+          <h3>
+            Vuoi rimanere aggiornati su altre novità del blog? Iscriviti alla
+            nostra newsletter:
+          </h3>
+          <form onsubmit="alert('Modulo inviato correttamente')">
+            <div>
+              <h4 style="padding-bottom: -20%">Qual è il tuo nome?</h4>
+              <input
+                style="width: 435px; padding: 5px; font-size: 15px"
+                type="text"
+                placeholder="Inserisci il tuo nome"
+              />
+            </div>
+
+            <div>
+              <h4>Qual è il tuo cognome?</h4>
+              <input type="text" placeholder="Inserisci il tuo cognome" />
+            </div>
+
+            <div class="terms">
+              <p>
+                <input type="radio" /> Accetto i<a href="#">
+                  termini e condizioni d'uso.</a
+                >
+              </p>
+              <p>
+                <button type="submit">Invia registrazione</button>
+              </p>
+            </div>
+          </form>
+        </div>
+
+        <div class="pie">
+          <hr />
+          <h3>Blog Epicode ©2023</h3>
+          <h3>
+            Testata online di Mario Rossi, registrata con prot. n.213/2018 - via
+            Luigi Einaudi 2 - Milano. P.IVA 00112233.
+          </h3>
+          <h3>Email: <a href="#">info@epicode.school</a></h3>
+        </div>
       </footer>
-      <hr />
     </div>
   </body>
 </html>
